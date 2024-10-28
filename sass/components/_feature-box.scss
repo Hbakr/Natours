@@ -7,7 +7,7 @@
   border-radius: 5px;
   transition: all 0.2s;
 
-  @include respond (tab-port){
+  @include respond(tab-port) {
     padding: 2rem;
   }
 
@@ -21,15 +21,15 @@
       $color-primary-dark
     );
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 
-    @include respond (tab-port){
+    @include respond(tab-port) {
       margin-bottom: 0;
     }
   }
 
   &:hover {
     transform: translateY(-1.5rem) scale(1.05);
- 
   }
 }
